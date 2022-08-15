@@ -1,0 +1,820 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 70px;
+  background: #222;
+  z-index: 1;
+}
+.nav h2 {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+#item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#item li {
+  list-style: none;
+  padding-right: 50px;
+}
+#item li a {
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#item li a:hover {
+  color: #ff5733;
+  cursor: pointer;
+}
+#item .icon i {
+  color: #fff;
+  padding-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#item .icon i:hover {
+  color: #ff5733;
+  cursor: pointer;
+}
+#bar {
+  color: #ff5733;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+.back {
+  background-image: url(images/bg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  z-index: -1;
+}
+.back .overlay {
+  background: #171819;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.mid p {
+  color: #7f8c8d;
+  font-size: 22px;
+}
+.mid h2 {
+  color: #fff;
+  font-size: 48px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.mid .btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mid .btn a.simple {
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+.mid .btn a.simple:hover {
+  color: #ff5733;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.mid .btn a.border {
+  color: #ff5733;
+  border: 1px solid #ff5733;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+.mid .btn a.border:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #ff5733;
+}
+.details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 100px 200px;
+  background: #171819;
+}
+.details h3,
+h6,
+h5 {
+  color: #fff;
+}
+.details .one {
+  width: 45%;
+}
+.details .one h3 {
+  font-size: 30px;
+  padding-bottom: 18px;
+}
+.details .one h6 {
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 18px;
+  line-height: 1.4;
+}
+.details .one p {
+  color: #666262;
+  font-size: 16px;
+  padding-bottom: 48px;
+}
+.details .one a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  background: #f13a11;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.details .one a:hover {
+  background: #fff;
+  color: #f13a11;
+}
+.details .two {
+  width: 45%;
+  border-left: 1px solid #666262;
+  padding-left: 100px;
+}
+.details .two h3 {
+  font-size: 30px;
+}
+.details .two h5 {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.details .two p {
+  font-size: 14px;
+  color: #666262;
+  margin-bottom: 13px;
+}
+.trainer {
+  background: #f9f9f9;
+  padding: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.trainer .about {
+  width: 39%;
+}
+.trainer .about h2 {
+  color: #212529;
+  font-size: 28px;
+  padding-bottom: 45px;
+}
+.trainer .about p {
+  color: #7f8c8d;
+  font-size: 18px;
+}
+.trainer .people {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.trainer .people .team {
+  width: 45%;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+    100px 100px 80px rgba(0, 0, 0, 0.09);
+}
+.trainer .people .team .img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.trainer .people .team .name,
+.trainer .people .team .pro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.trainer .people .team .name {
+  padding: 15px 20px 2px 20px;
+}
+.trainer .people .team .pro {
+  padding: 5px 20px 15px 20px;
+}
+.trainer .people .team .name h4 {
+  color: #212529;
+  font-size: 20px;
+}
+.trainer .people .team .name i,
+.trainer .people .team .pro i {
+  color: #212529;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.trainer .people .team .name i:hover,
+.trainer .people .team .pro i:hover {
+  color: #ff5733;
+  cursor: pointer;
+}
+.trainer .people .team .pro p {
+  color: #212529;
+}
+.class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 125px;
+}
+.class .paragraph {
+  font-size: 20px;
+  color: #95a5a6;
+  padding-bottom: 6px;
+  text-align: center;
+}
+.class .h2 {
+  font-size: 30px;
+  color: #222;
+  font-weight: 700;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.class .classMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.class .classMenu .team {
+  width: 320px;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+    100px 100px 80px rgba(0, 0, 0, 0.09);
+}
+.class .classMenu .team .img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.class .classMenu .team .teamDetails .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 0px 30px;
+}
+.class .classMenu .team .teamDetails .name .nameDetails h4 {
+  color: #212529;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+.class .classMenu .team .teamDetails .name .nameDetails p {
+  color: #212529;
+  font-size: 18px;
+}
+.class .classMenu .team .teamDetails .name .nameDetails p span {
+  font-weight: 700;
+  font-size: 18px;
+}
+.class .classMenu .team .teamDetails .name .num h5 {
+  font-size: 16px;
+  background: #f13a11;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  border-radius: 50%;
+}
+.class .classMenu .team .pro {
+  padding: 15px 30px 30px 30px;
+}
+.class .classMenu .team .pro p {
+  font-size: 18px;
+  color: #666262;
+  line-height: 1.3;
+}
+.contact {
+  padding: 128px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact .form {
+  width: 45%;
+}
+.contact .form h2 {
+  font-size: 32px;
+  color: #212529;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.contact .form .submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact .form .submit input,
+.contact .form .submit textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #95a5a6;
+  outline: none;
+  margin: 12px 0;
+  font-size: 16px;
+}
+.contact .form .submit input:focus,
+.contact .form .submit textarea:focus {
+  border: 1px solid #111;
+}
+.contact .form .submit input::placeholder {
+  color: #7f8c8d;
+  font-size: 16px;
+}
+.contact .form .submit textarea::placeholder {
+  color: #7f8c8d;
+  font-size: 16px;
+}
+.contact .form .submit a {
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 18px;
+}
+.contact .map {
+  width: 45%;
+}
+.contact .map h2 {
+  font-size: 32px;
+  color: #212529;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.contact .map p {
+  font-size: 18px;
+  color: #212529;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.contact .map p i {
+  color: red;
+  padding-right: 8px;
+}
+.contact .map iframe {
+  width: 100%;
+}
+.footer {
+  padding: 35px 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #212529;
+}
+.footer p {
+  color: #fff;
+  justify-content: flex-start;
+}
+.footer p a {
+  font-weight: 600;
+  color: rgb(185, 188, 194);
+  text-decoration: none;
+}
+.footer p i {
+  color: #f13a11;
+  padding-right: 8px;
+  line-height: 1.6;
+}
+
+/* Responsive Design with Media Query  */
+@media screen and (max-width: 1042px) {
+  .nav {
+    padding: 15px 45px;
+  }
+  .nav h2 {
+    font-size: 18px;
+  }
+  #item li {
+    padding-right: 30px;
+  }
+  #item li a {
+    font-size: 12px;
+  }
+  #item .icon i {
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav {
+    padding: 15px 35px;
+  }
+  .nav h2 {
+    font-size: 22px;
+  }
+  #item {
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: -19px;
+    right: -300px;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    margin-top: 75px;
+    transition: 0.5s;
+  }
+  #item li {
+    padding-right: 0;
+    padding: 4px 0;
+  }
+  #item li a {
+    font-size: 18px;
+  }
+  #item .icon {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #item .icon i {
+    padding: 0 15px 0 15px;
+  }
+  #bar {
+    display: initial;
+    cursor: pointer;
+  }
+  .mid p {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .mid h2 {
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .mid .btn a.simple {
+    padding: 10px 20px;
+  }
+  .mid .btn a.border {
+    padding: 10px 20px;
+  }
+  .details {
+    padding: 80px 100px;
+  }
+  .details .one {
+    width: 50%;
+  }
+  .details .one h3 {
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+  .details .one p {
+    font-size: 15px;
+    padding-bottom: 45px;
+  }
+  .details .one a {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+  .details .two {
+    padding-left: 80px;
+  }
+  .details .two h3 {
+    font-size: 25px;
+  }
+  .trainer {
+    padding: 80px;
+  }
+  .trainer .about h2 {
+    font-size: 24px;
+    padding-bottom: 35px;
+  }
+  .trainer .about p {
+    font-size: 16px;
+  }
+  .trainer .people .team {
+    width: 48%;
+  }
+  .trainer .people .team .name h4 {
+    color: #212529;
+    font-size: 18px;
+  }
+  .class {
+    padding: 80px;
+  }
+  .class .paragraph {
+    font-size: 18px;
+    padding-bottom: 4px;
+  }
+  .class .h2 {
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+  .class .classMenu .team {
+    width: 240px;
+  }
+  .class .classMenu .team .teamDetails .name {
+    padding: 5px 15px 0px 15px;
+  }
+  .class .classMenu .team .teamDetails .name .nameDetails h4 {
+    font-size: 18px;
+  }
+  .class .classMenu .team .teamDetails .name .nameDetails p {
+    font-size: 16px;
+  }
+  .class .classMenu .team .teamDetails .name .nameDetails p span {
+    font-size: 16px;
+  }
+  .class .classMenu .team .teamDetails .name .num h5 {
+    font-size: 15px;
+    width: 54px;
+    height: 54px;
+  }
+  .class .classMenu .team .pro {
+    padding: 15px 15px 30px 15px;
+  }
+  .class .classMenu .team .pro p {
+    font-size: 16px;
+  }
+  .contact {
+    padding: 100px;
+  }
+  .contact .form h2 {
+    font-size: 25px;
+  }
+  .contact .form .submit input,
+  .contact .form .submit textarea {
+    padding: 12px;
+    font-size: 16px;
+  }
+  .contact .form .submit a {
+    padding: 12px 0;
+    margin: 15px 0;
+    font-size: 16px;
+  }
+  .contact .map h2 {
+    font-size: 25px;
+  }
+  .contact .map p {
+    font-size: 14px;
+  }
+  .footer {
+    padding: 38px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav h2 {
+    font-size: 20px;
+  }
+  .back {
+    background-position: center;
+  }
+  .mid p {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .mid h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .mid .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mid .btn a.simple {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  .mid .btn a.border {
+    padding: 10px 20px;
+  }
+  .details {
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details .one {
+    width: 70%;
+  }
+  .details .one h3 {
+    font-size: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .details .one h6 {
+    text-align: center;
+  }
+  .details .one p {
+    font-size: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .details .one a {
+    font-size: 14px;
+    padding: 15px 20px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+  }
+  .details .two {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid #666262;
+    width: 70%;
+  }
+  .details .two h3 {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .details .two h5 {
+    text-align: center;
+  }
+  .details .two p {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .trainer {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .trainer .about {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+  .trainer .about h2 {
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .trainer .about p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .trainer .people {
+    width: 70%;
+  }
+  .class {
+    padding: 80px;
+  }
+  .class .classMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .class .classMenu .team {
+    width: 60%;
+    margin: 15px;
+  }
+  .contact {
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .form {
+    width: 70%;
+  }
+  .contact .form h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .contact .map {
+    width: 60%;
+  }
+  .contact .map h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .contact .map p {
+    text-align: center;
+  }
+  .footer {
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer p {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 496px) {
+  .mid {
+    width: 80%;
+  }
+  .mid p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .mid h2 {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    line-height: 1.3;
+  }
+  .details {
+    padding: 60px 60px;
+  }
+  .details .one {
+    width: 100%;
+  }
+  .details .one h3 {
+    font-size: 20px;
+  }
+  .details .one h6 {
+    font-size: 18px;
+  }
+  .trainer {
+    padding: 50px;
+  }
+  .trainer .about {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .trainer .people {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .trainer .people .team {
+    width: 90%;
+    margin: 15px;
+  }
+  .class {
+    padding: 60px 15px;
+  }
+  .class .classMenu .team {
+    width: 90%;
+  }
+  .contact {
+    padding: 60px 0px;
+  }
+  .contact .form {
+    width: 80%;
+  }
+  .contact .map {
+    width: 80%;
+  }
+}
