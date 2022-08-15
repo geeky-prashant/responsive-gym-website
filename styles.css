@@ -459,7 +459,7 @@ h5 {
     width: 300px;
     height: 100vh;
     position: fixed;
-    top: -19px;
+    top: -22px;
     right: -300px;
     background: rgba(0, 0, 0, 0.9);
     z-index: 1;
@@ -799,7 +799,7 @@ h5 {
     justify-content: center;
   }
   .trainer .people .team {
-    width: 90%;
+    width: 100%;
     margin: 15px;
   }
   .class {
