@@ -430,7 +430,7 @@ h5 {
 /* Responsive Design with Media Query  */
 @media screen and (max-width: 1042px) {
   .nav {
-    padding: 15px 45px;
+    padding: 15px 30px;
   }
   .nav h2 {
     font-size: 18px;
@@ -448,7 +448,7 @@ h5 {
 
 @media screen and (max-width: 991px) {
   .nav {
-    padding: 15px 35px;
+    padding: 15px 30px;
   }
   .nav h2 {
     font-size: 22px;
@@ -608,6 +608,9 @@ h5 {
 }
 
 @media screen and (max-width: 768px) {
+  .nav {
+    padding: 15px 25px;
+  }
   .nav h2 {
     font-size: 20px;
   }
@@ -759,6 +762,9 @@ h5 {
   }
 }
 @media screen and (max-width: 496px) {
+  .nav {
+    padding: 15px 20px;
+  }
   .mid {
     width: 80%;
   }
