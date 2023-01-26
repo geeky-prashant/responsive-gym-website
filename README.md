@@ -3,7 +3,6 @@
   ![GitHub repo size](https://img.shields.io/github/repo-size/geeky-prashant/responsive-gym-website)
   ![GitHub stars](https://img.shields.io/github/stars/geeky-prashant/responsive-gym-website)
   ![GitHub forks](https://img.shields.io/github/forks/geeky-prashant/responsive-gym-website?style=social)
-  [![Twitter Follow](https://img.shields.io/twitter/follow/geekyprashant?style=social)](https://twitter.com/intent/follow?screen_name=geekyprashant)
  
   <br />
 
